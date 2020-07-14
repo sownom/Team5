@@ -9,8 +9,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-id : 디자인
-class : JQuery, Ajax
-name : 정보이동
+<div name = "i_id" class = "i_id" id = "i_id"></div>
 </body>
 </html>
