@@ -9,6 +9,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-test
+id : 디자인
+class : JQuery, Ajax
+name : 정보이동
 </body>
 </html>
