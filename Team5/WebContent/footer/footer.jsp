@@ -5,10 +5,34 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel = "stylesheet" href="">
-<title>Insert title here</title>
+<link rel = "stylesheet" href="<%=request.getContextPath() %>/css/footer.css">
+<script src = "http://code.jquery.com/jquery-Latest.js"></script>
 </head>
 <body>
-footer
+	<!-- footer 정보 -->
+	<div id = "f_main" class = "f_main">
+		<!-- 회사 로고 -->
+		<div id = "f_left" class = "f_left">
+			<img src = "<%=request.getContextPath() %>/image/f_log.jpg" id = "f_log" class = "f_log">
+		</div>
+		<!-- 회사 로고 -->
+		
+		<!-- 회사 정보 -->
+		<div id = "f_company" class = "f_company">
+			<p>회사 이름 : 중앙정보기술인재개발원</p>
+			<p>주소 : 서울특별시 마포구 대흥동 12-20 </p>
+			<p>전화번호 : 02-313-1711</p>
+			<p>고객센터 번호 : 02-0000-0000</p>
+		</div>
+		<!-- 회사정보 -->
+		
+		<!-- 팀정보 -->
+		<div id = "f_team" class = "f_team">
+			<p>팀이름 : Team5</p>
+			<p>팀원 : 서월성, 권미진, 백영민, 손민수, 이성호</p>
+		</div>
+		<!-- 팀정보 -->
+	</div>
+	<!-- footer 정보 -->
 </body>
 </html>
