@@ -9,6 +9,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<div name = "i_id" class = "i_id" id = "i_id"></div>
+<div name = "i_id" class = "i_id" id = "i_id">id</div>
 </body>
 </html>
