@@ -9,5 +9,22 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<!-- header -->
+	<div>
+		<%@include file = "../header/header.jsp" %>
+	</div>
+	<!-- header -->
+	
+	<!-- content -->
+	<div>
+		main
+	</div>
+	<!-- content -->
+	
+	<!-- footer -->
+	<div>
+		<%@include file = "../footer/footer.jsp" %>
+	</div>
+	<!-- footer -->
 </body>
 </html>
