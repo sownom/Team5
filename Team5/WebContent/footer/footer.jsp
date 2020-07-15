@@ -5,16 +5,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel = "stylesheet" href="<%=request.getContextPath() %>/css/footer.css">
-<script src = "http://code.jquery.com/jquery-Latest.js"></script>
+<!-- <link rel = "stylesheet" href="<%=request.getContextPath() %>/css/css.css"> -->
 </head>
 <body>
 	<!-- footer 정보 -->
 	<div id = "f_main" class = "f_main">
 		<!-- 회사 로고 -->
-		<div id = "f_left" class = "f_left">
-			<img src = "<%=request.getContextPath() %>/image/f_log.jpg" id = "f_log" class = "f_log">
-		</div>
+		<img src = "<%=request.getContextPath() %>/image/f_log.jpg" id = "f_logo" class = "f_logo">
 		<!-- 회사 로고 -->
 		
 		<!-- 회사 정보 -->

@@ -5,17 +5,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel = "stylesheet" href="<%=request.getContextPath() %>/css/header.css">
-<script src = "http://code.jquery.com/jquery-Latest.js"></script>
-<script src="<%=request.getContextPath() %>/js/header.js"></script>
+<!-- <link rel = "stylesheet" href="<%=request.getContextPath() %>/css/css.css"> -->
 </head>
 <body>
 	<!-- 헤드 정보 -->
 	<div id = "h_main" class = "h_main">
 		<!-- 로고 -->
-		<div id = "h_left" class = "h_left">
-			<img src = "<%=request.getContextPath() %>/image/h_log.png" id = "h_log" class = "h_log">
-		</div>
+		<img src = "<%=request.getContextPath() %>/image/h_log.png" id = "h_logo" class = "h_logo">
 		<!-- 로고 -->
 		
 		<!-- 사이트 이름 -->

@@ -5,10 +5,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel = "stylesheet" href="<%=request.getContextPath() %>/css/footer.css">
+<link rel = "stylesheet" href="<%=request.getContextPath() %>/css/css.css">
 <script src = "http://code.jquery.com/jquery-Latest.js"></script>
-<script src="<%=request.getContextPath() %>/js/header.js"></script>
-<title>Insert title here</title>
+<script src="<%=request.getContextPath() %>/js/js.js"></script>
 </head>
 <body>
 	<!-- header -->
@@ -21,9 +20,9 @@
 	<div id = "m_main" class = "m_main">
 		<!-- 이미지 변경 -->
 		<div id = "m_image" class = "m_image">
-			<img src = "<%=request.getContextPath() %>/image/m_image1.jpg">
-			<img src = "<%=request.getContextPath() %>/image/m_image2.jpg">
-			<img src = "<%=request.getContextPath() %>/image/m_image3.jpg">
+			<img src = "<%=request.getContextPath() %>/image/m_image1.jpg" id = "m_image1" class = "m_image1">
+			<img src = "<%=request.getContextPath() %>/image/m_image2.jpg" id = "m_image2" class = "m_image2">
+			<img src = "<%=request.getContextPath() %>/image/m_image3.jpg" id = "m_image3" class = "m_image3">
 		</div>
 		<!-- 이미지 변경 -->
 		

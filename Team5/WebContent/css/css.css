@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+* {
+	margin : 0;
+	padding : 0;
+	border : 1px solid black;
+}
+
+/*header*/
+#h_main {
+	width : 83.333%;
+	padding : 0 8.333%;
+	height : 100px;
+	position : relative;
+}
+
+#h_main > div{
+	display : inline-block;
+}
+
+#h_logo{
+	width : 16.666%;
+	height : 100px;
+	position : absolute;
+}
+
+#h_title {
+	width : 50%;
+	height : 100px;
+	line-height: 100px;
+	font-size : 36px;
+	text-align : center;
+	position : absolute;
+	left : 25%;
+}
+
+#h_right {
+	width : 16.666%;
+	position : absolute;
+	right : 8.333%;
+}
+#h_right > input, #h_right2 > input{
+	float : right;
+}
+
+#h_right2 {
+	display : none;
+	width : 16.666%;
+	position : absolute;
+	right : 8.333%;
+}
+
+#h_nav {
+	padding : 0 16.666%;
+	text-align : center;
+}
+
+#h_nav > input{
+	width : 24%;
+	height : 50px;
+}
+/*header*/
+
+/*main*/
+#m_main {
+	width : 83.333%;
+	padding : 0 8.333%;
+}
+
+#m_image {
+	width : 100%;
+	height : 500px;
+}
+
+#m_image > img{
+	width : 100%;
+	height : 100%;
+}
+
+#m_image2 {
+	display : none;
+}
+
+#m_image3 {
+	display : none;
+}
+
+#m_point {
+	margin-top : 25px;
+}
+
+#m_information {
+	margin-top : 25px;
+	display : grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+#m_self {
+	margin-top : 25px;
+}
+
+#m_selfimg {
+	margin : 0 auto;
+}
+/*main*/
+
+/*footer*/
+#f_main {
+	width : 83.333%;
+	padding : 0 8.333%;
+	height : 100px;
+	position : relative;
+}
+
+#f_main > div{
+	display : inline-block;
+}
+
+#f_logo{
+	width : 16.666%;
+	height : 100px;
+	position : absolute;
+}
+
+#f_company {
+	width : 41.666%;
+	height : 100px;
+	font-size : 16px;
+	position : absolute;
+	left : 25%;
+}
+
+#f_team {
+	width : 25%;
+	position : absolute;
+	right : 8.333%;
+}
+/*footer*/

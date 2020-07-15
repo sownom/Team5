@@ -5,8 +5,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel = "stylesheet" href="">
-<title>Insert title here</title>
+<link rel = "stylesheet" href="<%=request.getContextPath() %>/css/css.css">
+<script src = "http://code.jquery.com/jquery-Latest.js"></script>
+<script src="<%=request.getContextPath() %>/js/header.js"></script>
 </head>
 <body>
 	<!-- header -->
@@ -16,7 +17,15 @@
 	<!-- header -->
 	
 	<!-- content -->
-	<div>
+	<div id = "b_ajax" class = "b_ajax">
+		
+	</div>
+	
+	<div id = "b_main" class = "b_main">
+		
+	</div>
+	
+	<div id = "b_check" class = "b_check">
 		
 	</div>
 	<!-- content -->
