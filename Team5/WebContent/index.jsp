@@ -5,8 +5,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel = "stylesheet" href="">
-<title>Insert title here</title>
+<link rel = "stylesheet" href="<%=request.getContextPath() %>/css/css.css">
+<script src = "http://code.jquery.com/jquery-Latest.js"></script>
+<script src="<%=request.getContextPath() %>/js/js.js"></script>
 </head>
 <body>
 	<!-- header -->

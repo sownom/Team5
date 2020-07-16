@@ -11,7 +11,7 @@
 	<!-- 헤드 정보 -->
 	<div id = "h_main" class = "h_main">
 		<!-- 로고 -->
-		<img src = "<%=request.getContextPath() %>/image/h_log.png" id = "h_logo" class = "h_logo">
+		<img src = "<%=request.getContextPath() %>/image/h_logo.jpg" id = "h_logo" class = "h_logo">
 		<!-- 로고 -->
 		
 		<!-- 사이트 이름 -->

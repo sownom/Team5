@@ -11,7 +11,7 @@
 	<!-- footer 정보 -->
 	<div id = "f_main" class = "f_main">
 		<!-- 회사 로고 -->
-		<img src = "<%=request.getContextPath() %>/image/f_log.jpg" id = "f_logo" class = "f_logo">
+		<img src = "<%=request.getContextPath() %>/image/f_logo.jpg" id = "f_logo" class = "f_logo">
 		<!-- 회사 로고 -->
 		
 		<!-- 회사 정보 -->
