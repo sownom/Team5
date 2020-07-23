@@ -38,10 +38,10 @@
 		<c:forEach var="board" items="${boardlist}">
 			<tr>
 				<td>${board.BOARD_NO}</td>
-				<td><a href="./BoardDetail.do?BOARD_NO=${BOARD_NO}&page=${page}">${board.BOARD_TITLE}</a></td>
+				<td><a href="./BoardDetail.do?BOAR_NO=${BOAR_NO}&page=${page}">${board.BOAR_TITLE}</a></td>
 				<td>${board.MEM_ID}</td>
-				<td>${board.BOARD_TIME}</td>
-				<td>${board.BOARD_COUN}</td>
+				<td>${board.BOAR_TIME}</td>
+				<td>${board.BOAR_COUN}</td>
 			</tr>
 		</c:forEach>
 		
