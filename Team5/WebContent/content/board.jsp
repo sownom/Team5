@@ -31,7 +31,7 @@
 		<tr>조회
 		</tr>
 		<c:if test="${empty boardlist}">
-			작성된 게시글이 없습니다.
+		 	작성된 게시글이 없습니다.
 			<br>
 			<input type="button" value=글쓰기 onClick="./BoardWrite.do">
 		</c:if>
