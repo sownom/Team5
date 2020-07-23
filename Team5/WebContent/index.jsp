@@ -8,24 +8,10 @@
 <link rel = "stylesheet" href="<%=request.getContextPath() %>/css/css.css">
 <script src = "http://code.jquery.com/jquery-Latest.js"></script>
 <script src="<%=request.getContextPath() %>/js/js.js"></script>
+<script language="javascript">
+	location.href = "./Main.do" ;
+</script>
 </head>
 <body>
-	<!-- header -->
-	<div>
-		<%@include file = "../header/header.jsp" %>
-	</div>
-	<!-- header -->
-	
-	<!-- content -->
-	<div>
-		
-	</div>
-	<!-- content -->
-	
-	<!-- footer -->
-	<div>
-		<%@include file = "../footer/footer.jsp" %>
-	</div>
-	<!-- footer -->
 </body>
 </html>
