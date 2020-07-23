@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <resource-ref>
+	<description>Connection</description><!-- 리소스 설명 -->
+	<res-ref-name>Team5</res-ref-name><!-- 리소스 이름(JNDI명) -->
+	<res-type>javax.sql.DataSource</res-type><!-- 리턴 Type -->
+	<res-auth>Container</res-auth><!-- 관리 계층 -->
+  </resource-ref>
+  
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

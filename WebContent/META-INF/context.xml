@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<Resource name="Team5" auth="Container" type="javax.sql.DataSource"
+
+  	driverClassName="com.mysql.jdbc.Driver"
+
+  	url="jdbc:mysql://172.30.1.1:3306/team5"
+
+  	username="team1" password="team1" 
+
+  	maxActive="100" maxIdle="30" maxWait="10000"
+
+  	removeAbandoned="true" removeAbandonedTimeout="60"/> 
