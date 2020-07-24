@@ -106,12 +106,12 @@
 
 /*psychological*/
 #p_main {
-	width : 100%;
+	width : 83.333%;
 	padding : 0 8.333%;
 }
 
 #p_main > div {
-	width : 83.333%;
+	width : 100%;
 	position : relative;
 }
 
@@ -119,17 +119,21 @@
 	width : 16.666%;
 	height : 200px;
 }
-/*position : absolute;*/
+
 #p_explanation {
 	width : 64%;
 	white-space : normal;
 	position : absolute;
+	left : 18%;
 	font-size : 18px;
+	margin-top : 2%;
 }
 
 #p_inspection{
 	width : 16.666%;
 	height : 200px;
+	position : absolute;
+	right : 0%;
 }
 
 #p_inspection > input {

@@ -134,6 +134,78 @@ public class BoardDAO {
 		
 	}
 	
-	
-	
+	public void countUpdate(int BOAR_NO) {
+		Connection con = null;
+		PreparedStatement pstmt = null;
+
+		try {
+			con = getConnection();
+
+			String sql = "update board set BOAR_COUN=BOAR_COUN+1 where BOAR_NO=?";
+
+			pstmt = con.prepareStatement(sql);
+			pstmt.setInt(1, BOAR_NO);
+			pstmt.executeUpdate();
+
+		}catch(Exception e) {
+			e.printStackTrace();
+		}finally {
+			if (pstmt != null)
+				try {
+					pstmt.close();
+				} catch (Exception e) {
+				}
+			if (con != null)
+				try {
+					con.close();
+				} catch (Exception e) {
+				}
+		}
+
+	}
+
+	// 상세페이지
+	public BoardDTO getCont(int BOAR_NO) {
+		BoardDTO board = new BoardDTO();
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		try {
+			con = getConnection();
+
+			String sql = "select * from board where BOAR_NO=?";
+
+			pstmt = con.prepareStatement(sql);
+			pstmt.setInt(1, BOAR_NO);
+			rs = pstmt.executeQuery();
+			if(rs.next()) {
+				board.setBOAR_NO(rs.getInt("BOAR_NO"));
+				board.setMEM_ID(rs.getString("MEM_ID"));
+				board.setBOAR_TITLE(rs.getString("BOAR_TITLE"));
+				board.setBOAR_CONT(rs.getString("BOAR_CONT"));
+				board.setBOAR_TIME(rs.getDate("BOAR_TIME"));
+				board.setBOAR_COUN(rs.getInt("BOAR_COUN"));
+			}
+		}catch(Exception e) {
+			e.printStackTrace();
+		}finally {
+			if (rs != null)
+				try {
+					rs.close();
+				} catch (Exception e) {
+				}
+			if (pstmt != null)
+				try {
+					pstmt.close();
+				} catch (Exception e) {
+				}
+			if (con != null)
+				try {
+					con.close();
+				} catch (Exception e) {
+				}
+		}
+
+		return board;
+	}
 }

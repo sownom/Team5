@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import team.t.service.Action;
 import team.t.service.ActionForward;
 import team.t.service.BoardList;
+import team.t.service.Stress;
 
 /**
  * Servlet implementation class BoardFrontController
@@ -43,14 +44,31 @@ public class Controller extends HttpServlet {
 			}catch(Exception e) {
 				e.printStackTrace();
 			}
+		// 게시판 상세페이지
+		}else if(command.equals("/BoardDetail")) {
+			try {
+
+			}catch(Exception e) {
+				e.printStackTrace();
+			}
+		// 검사 페이지
 		}else if(command.equals("/CheckList.do")) {
 			forward = new ActionForward();
 			forward.setRedirect(false);
 			forward.setPath("/content/psychological.jsp");
+		// 메인 페이지
 		}else if(command.equals("/Main.do")) {
 			forward = new ActionForward();
 			forward.setRedirect(false);
 			forward.setPath("./content/main.jsp");
+		// 스트레스 검사 페이지
+		}else if(command.equals("/Stress.do")) {
+			try {
+				action = new Stress();
+				forward = action.execute(request, response);
+			}catch(Exception e) {
+				e.printStackTrace();
+			}
 		}
 		
 		if(forward != null) {
