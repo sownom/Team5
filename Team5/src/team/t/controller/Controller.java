@@ -11,7 +11,10 @@ import javax.servlet.http.HttpServletResponse;
 
 import team.t.service.Action;
 import team.t.service.ActionForward;
+import team.t.service.BoardDetail;
 import team.t.service.BoardList;
+import team.t.service.BoardWrite;
+
 
 /**
  * Servlet implementation class BoardFrontController
@@ -44,14 +47,29 @@ public class Controller extends HttpServlet {
 				e.printStackTrace();
 		
 			}
-		// 상세페이지
-		}else if(command.equals("/BoardDetail")) {
+		// 게시판 글
+		}else if(command.equals("/BoardWrite.do")) {
 				try {
-					
+					action = new BoardWrite();
+					forward = action.execute(request, response);
 				}catch(Exception e) {
 					e.printStackTrace();
 				}
+		// 게시판 폼
+		}else if(command.equals("/BoardForm.do")) {
 			
+				forward = new ActionForward();
+				forward.setRedirect(false);
+				forward.setPath("/content/boardform.jsp");
+		// 상세페이지
+		}else if(command.equals("/BoardDetail.do")) {
+				try {
+					action = new BoardDetail();
+					forward = action.execute(request, response);
+				}catch(Exception e) {
+					e.printStackTrace();
+				}
+		
 		
 		}else if(command.equals("/CheckList.do")) {
 			forward = new ActionForward();
