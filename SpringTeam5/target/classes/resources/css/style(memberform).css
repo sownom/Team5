@@ -1,0 +1,101 @@
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+ 
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+.join-form h1 {
+	font-size: 32px; color: #fff;
+	text-align: center;
+	margin-bottom: 50px; 
+}
+.join-form {position: relative; z-index: 2;}
+
+body {
+	font-family: 'Noto Sans KR', sans=serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background: url("bg.jpg") no-repeat center;
+}
+body::before {
+	content: "";
+	position: absolute; z-index: 1;
+	top: 0; right: 0; bottom: 0; left: 0;
+	background-color: rgba(0,0,0,.7);
+}
+
+
+.input-group:first-child{margin-top: 0;}
+
+.input-group input {
+	padding: 15px 10px 10px;
+	background-color: transparent;
+	border: none;
+	border-bottom: 2px solid #999;
+	font-size: 20px; color: #fff;
+	outline: none;
+	}
+.input-group input#mem_post{
+    background-color: white;
+    border: none;
+    border-radius: 3px;
+    width: 240;
+    font-size: 20px;
+}
+.input-group input#mem_birth{
+    background-color: white;
+    width: 130;
+    font-size: 20px;
+}
+.input-group input#mem_email1{
+    background-color: white;
+    width: 130;
+    font-size: 20px;
+}
+.input-group label {
+	position: absolute;
+    left: 12px; top: 18px;
+	font-size: 15px; color: white;
+	transition: all .1s ease;
+	}
+.input-group input:focus + label,
+.input-group input:valid + label{
+	top: -2px;
+	color: transparent;
+}
+
+label[for=mem_birth]{
+    margin-top: 30px;
+    margin-left: 10px;
+    font-size: 15px;
+    color: white;
+}
+label[for=mem_tel1]{
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 15px;
+    color: white;
+}
+label[for=mem_address]{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 15px;
+    color: white;
+}
+label[for=mem_phone1]{
+    
+    margin-left: 10px;
+    font-size: 15px;
+    color: white;
+}
+label[for=mem_email1]{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 15px;
+    color: white;
+}
+.btn#idcheck{
+    position: absolute;
+    margin-left: auto;
+}
